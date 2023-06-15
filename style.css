@@ -1,0 +1,134 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 2em;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 1em;
+}
+
+header li {
+    display: inline-block;
+    margin-right: 1em;
+    font-size: 1.2em;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /* Change flex direction to row */
+}
+
+section {
+    margin-bottom: 2em;
+    width: calc(50% - 1em); /* Set width to 50% minus 1em margin */
+    min-width: 300px; /* Add min-width to prevent stacking on smaller screens */
+    display: flex;
+    flex-direction: column;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 1em;
+}
+
+section ul li {
+    margin-bottom: 1em;
+}
+
+section ul li h3 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+section ul li p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#projects-list li {
+    width: calc(50% - 1em);
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+#projects-list li:hover {
+    transform: translateY(-5px);
+}
+
+#projects-list li a {
+    color: #0077ff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#projects-list li p {
+    margin: 0;
+    margin-top: 0.5em;
+    font-size: 1.1em;
+}
+
+#projects-list li ul {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+#projects-list li ul li {
+    font-size: 1em;
+    margin-bottom: 0.25em;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        padding: 1em;
+    }
+
+    section {
+        margin-bottom: 1em;
+        width: 100%; /* Set width to 100% on smaller screens */
+    }
+
+    #projects-list li {
+        width: 100%;
+    }
+}
