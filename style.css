@@ -30,18 +30,22 @@ header li {
 }
 
 main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 2em;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row; /* Change flex direction to row */
+    flex-direction: row;
+    /* Change flex direction to row */
+    justify-content: space-between;
 }
 
 section {
     margin-bottom: 2em;
-    width: calc(50% - 1em); /* Set width to 50% minus 1em margin */
-    min-width: 300px; /* Add min-width to prevent stacking on smaller screens */
+    width: calc(50% - 1em);
+    /* Set width to 50% minus 1em margin */
+    min-width: 300px;
+    /* Add min-width to prevent stacking on smaller screens */
     display: flex;
     flex-direction: column;
 }
@@ -125,7 +129,8 @@ section ul li p {
 
     section {
         margin-bottom: 1em;
-        width: 100%; /* Set width to 100% on smaller screens */
+        width: 100%;
+        /* Set width to 100% on smaller screens */
     }
 
     #projects-list li {
