@@ -5,6 +5,14 @@ body {
     background-color: #f1f1f1;
 }
 
+img {
+    float: left;
+    width: 5%; /* You can adjust this value to your liking */
+    height: auto; /* This will maintain the aspect ratio of the image */
+    margin-right: 10px; /* This will add some space between the image and the paragraph */
+    border-radius: 50%;
+}
+
 header {
     background-color: #333;
     color: #fff;
@@ -30,13 +38,12 @@ header li {
 }
 
 main {
-    max-width: 1000px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 2em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    /* Change flex direction to row */
     justify-content: space-between;
 }
 
